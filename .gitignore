@@ -6,5 +6,5 @@ db/migrations
 .yarn
 .pnp*
 
-.idea/
+.idea/q
 node_modules
