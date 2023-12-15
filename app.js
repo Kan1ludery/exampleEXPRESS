@@ -1,6 +1,8 @@
+require('dotenv').config(); // Загружаем переменные окружения из .env файла
+
 const express = require('express');
 const app = express();
-const port = 3000; // Выберите свободный порт
+const port = process.env.PORT || 5000; // Используем порт из переменной окружения или 3000 по умолчанию
 
 app.get('/', (req, res) => {
     res.send('Привет, мир! Это exampleExpress!');
